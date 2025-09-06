@@ -76,6 +76,46 @@ to extract just the valid postcodes, lat and long values into a file called `pos
 1. Ensure that you have a file called postcodes.csv in the root directory, it should contain 3 columns only
 2. Execute the `yarn run build` command, you should see an output like `{ totalOutwards: 2943, totalPostcodes: 1790884, fileSize: 6509848 }` and a new file called `postcodes.pcod` apear in the root of the directory.
 
+## Performance
+
+Below is the output on a Mac Pro M3 for the script `yarn ts-node scripts/build-and-test.ts`, this builds a postcode database from the postcodes.csv, and then loads that into the client and then tests every postcode in the CSV against the binary file, ensuring that every postcode is successfully index
+
+```
+🏗️  Building postcode database...
+✅ Build completed in 1.65s
+
+🧪 Loading database and starting tests...
+
+🔍 Testing postcode lookups...
+
+============================================================
+           POSTCODE DATABASE TEST REPORT
+============================================================
+
+📊 PROCESSING STATISTICS:
+   Total rows processed:     1,790,884
+   Valid rows:               1,790,884
+   Invalid rows:             0
+   Invalid rate:             0.00%
+
+🔍 LOOKUP STATISTICS:
+   Successful lookups:       1,790,884
+   Failed lookups:           0
+   Lookup success rate:      100.00%
+
+📍 COORDINATE ACCURACY:
+   Coordinate mismatches:    0
+   Accuracy rate:            100.00%
+   Max coordinate error:     0.66m
+   Average coordinate error: 0.35m
+
+⏱️  PERFORMANCE:
+   Build time:               1.65s
+   Test time:                1.95s
+   Total time:               3.59s
+   Lookup rate:              920763 lookups/sec
+```
+
 ## File Format
 
 ```
