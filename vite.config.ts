@@ -3,6 +3,7 @@ import legacy from '@vitejs/plugin-legacy'
 
 export default defineConfig({
   root: 'playground',
+  base: './', // Use relative paths for GitHub Pages
   plugins: [
     legacy({
       targets: ['defaults', 'not IE 11']
