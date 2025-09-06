@@ -2,6 +2,8 @@
 
 A high-performance, ultra-compact binary format for UK postcode geolocation data. Compresses 1.79M postcodes from ~50MB CSV to just **6.2MB binary** (88% compression) with **920K+ lookups/second** and O(1) exact lookups.
 
+🌐 **[Try the Live Demo →](https://robertpitt.github.io/postcode-db/)**
+
 ## Architecture
 
 The implementation is split into focused, reusable classes:
@@ -277,6 +279,8 @@ _\*Estimated performance for linear/indexed searches without specialized optimiz
   - lonDelta = unit.lonInt - sector.lonMin
 
 # Web Interface
+
+🚀 **[Live Demo: https://robertpitt.github.io/postcode-db/](https://robertpitt.github.io/postcode-db/)**
 
 A modern web interface is available in the `playground/` directory. This provides a user-friendly way to search postcodes through a web browser.
 
