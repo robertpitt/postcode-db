@@ -276,6 +276,43 @@ _\*Estimated performance for linear/indexed searches without specialized optimiz
   - latDelta = unit.latInt - sector.latMin
   - lonDelta = unit.lonInt - sector.lonMin
 
-# Insperations
+# Web Interface
+
+A modern web interface is available in the `playground/` directory. This provides a user-friendly way to search postcodes through a web browser.
+
+## Quick Start
+
+```bash
+# Install dependencies
+yarn install
+
+# Start development server
+yarn dev
+
+# Build for production
+yarn build:web
+```
+
+Visit `http://localhost:3000` to use the web interface.
+
+## Features
+
+- **Real-time search**: Type partial or full postcodes for instant results
+- **Responsive design**: Works on desktop and mobile
+- **Modern UI**: Built with Tailwind CSS and Font Awesome icons
+- **Map integration**: Direct links to Google Maps
+- **GitHub Pages ready**: Automatic deployment workflow included
+
+## Deployment
+
+The project includes a GitHub Actions workflow that automatically:
+
+1. Builds the postcode database
+2. Compiles the web interface
+3. Deploys to GitHub Pages
+
+Simply push to the `main` branch to trigger deployment.
+
+# Inspirations
 
 - https://www.youtube.com/watch?v=5HRAUWrvK6o

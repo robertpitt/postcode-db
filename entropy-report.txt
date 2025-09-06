@@ -1,0 +1,47 @@
+================================================================================
+ENTROPY ANALYSIS REPORT - postcodes.pcod
+================================================================================
+
+File Size: 6,509,848 bytes (6.21 MB)
+Overall Entropy: 7.8040 bits/byte
+Theoretical Maximum: 8.0000 bits/byte
+Compression Ratio: 2.45% potential savings
+
+BIT PATTERN ANALYSIS:
+----------------------------------------
+Zero bits: 28,924,685 (55.54%)
+One bits:  23,154,099 (44.46%)
+Alternating bytes: 71,040
+Repeating bytes:   650,347
+
+SECTION ENTROPY ANALYSIS:
+--------------------------------------------------------------------------------
+Offset   Size     Entropy    Description                                       
+--------------------------------------------------------------------------------
+0x000000 32       3.1686     File Header (PCDB magic, version, counts, offsets)
+0x000020 26,487   6.3073     Outward Index (2943 entries × 9 bytes)            
+0x006797 6,483,329 7.8062     Sector Tables + Unit Data (compressed coordinates)
+
+CHUNK ENTROPY DISTRIBUTION (4KB chunks):
+--------------------------------------------------
+5.5 bits/byte:   4 chunks (  0.3%) 
+6.0 bits/byte:   2 chunks (  0.1%) 
+6.5 bits/byte:   3 chunks (  0.2%) 
+7.0 bits/byte:  57 chunks (  3.6%) █
+7.5 bits/byte: 1524 chunks ( 95.8%) ███████████████████████████████████████████████
+
+HIGHEST ENTROPY CHUNKS (most random/compressed):
+------------------------------------------------------------
+  Offset 0x158000: 7.9049 bits/byte
+  Offset 0x0be000: 7.9040 bits/byte
+  Offset 0x161000: 7.9020 bits/byte
+  Offset 0x0cc000: 7.9000 bits/byte
+  Offset 0x3b6000: 7.8989 bits/byte
+
+LOWEST ENTROPY CHUNKS (most structured/redundant):
+------------------------------------------------------------
+  Offset 0x003000: 5.7888 bits/byte
+  Offset 0x000000: 5.7997 bits/byte
+  Offset 0x005000: 5.9050 bits/byte
+  Offset 0x004000: 5.9987 bits/byte
+  Offset 0x002000: 6.0888 bits/byte
