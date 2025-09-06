@@ -114,8 +114,8 @@ class PostcodeSearchApp {
     try {
       this.showLoading('Loading postcode database...')
       
-      // Fetch the database file
-      const response = await fetch('/postcodes.pcod')
+      // Fetch the database file from GitHub
+      const response = await fetch('https://raw.githubusercontent.com/robertpitt/postcode-db/main/postcodes.pcod')
       if (!response.ok) {
         throw new Error(`Failed to load database: ${response.statusText}`)
       }
