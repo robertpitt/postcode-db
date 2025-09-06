@@ -214,3 +214,7 @@ Below is the output on a Mac Pro M3 for the script `yarn ts-node scripts/build-a
 - bitsLat/bitsLon are minimal widths for sector-local deltas:
   - latDelta = unit.latInt - sector.latMin
   - lonDelta = unit.lonInt - sector.lonMin
+
+# Insperations
+
+- https://www.youtube.com/watch?v=5HRAUWrvK6o
