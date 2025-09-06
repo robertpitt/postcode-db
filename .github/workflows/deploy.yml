@@ -23,9 +23,6 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      - name: Build postcode database
-        run: yarn build
-
       - name: Build web app
         run: yarn build:web
 
